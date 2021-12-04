@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { EmployeelistComponent } from './employeelist/employeelist.component';
 import { ServiceofemployeeService } from './serviceofemployee.service';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ServiceofemployeeService } from './serviceofemployee.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [ServiceofemployeeService],
   bootstrap: [AppComponent]
