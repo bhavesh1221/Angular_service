@@ -8,8 +8,8 @@ import { ServiceofemployeeService } from '../serviceofemployee.service';
 })
 export class EmployeelistComponent implements OnInit {
   // public employee[]:<string> = [];
-  employee: Array<string> = [];
-  text:string = '';
+  // employee: Array<string> = [];
+  text:any = '';
   // employee:string[] = new Array() 
   constructor(private _employeeservice: ServiceofemployeeService) { }
 
